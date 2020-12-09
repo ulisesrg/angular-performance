@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as jsPDF from 'jspdf';
+// import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-pdf',
@@ -17,9 +17,12 @@ export class PdfComponent implements OnInit {
   }
 
   generatePdf() {
-    const doc = new jsPDF();
-    doc.text('Hello world!', 10, 10);
-    doc.save('a4.pdf');
+    // const doc = new jsPDF();
+    // doc.text('Hello world!', 10, 10);
+    // doc.save('a4.pdf');
+
+    // request to a backend service to manage the PDF creation since it is not
+    // very good (performance) to have this functionality on the front
   }
 
 }
