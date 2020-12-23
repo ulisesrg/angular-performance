@@ -16,14 +16,23 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
 import { DatesComponent } from './components/dates/dates.component';
 import { PdfComponent } from './components/pdf/pdf.component';
 
-
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, TableComponent, DashboardComponent, ProductsListComponent, FormProductComponent, ProductEditComponent, DatesComponent, PdfComponent],
+  declarations: [
+    ProductFormComponent,
+    NavComponent,
+    TableComponent,
+    DashboardComponent,
+    ProductsListComponent,
+    FormProductComponent,
+    ProductEditComponent,
+    DatesComponent,
+    PdfComponent,
+  ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     ReactiveFormsModule,
     MaterialModule,
-  ]
+  ],
 })
-export class AdminModule { }
+export class AdminModule {}

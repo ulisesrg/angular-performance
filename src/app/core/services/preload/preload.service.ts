@@ -8,6 +8,7 @@ import { Observable, of } from 'rxjs';
 export class PreloadService {
 
   preload(route: Route, load: () => Observable<any>): Observable<any> {
+    // tslint:disable-next-line: no-string-literal
     if (route.data && route.data['preload']) {
       return load();
     } else {
